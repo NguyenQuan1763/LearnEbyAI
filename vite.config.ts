@@ -4,7 +4,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    const repoBase = '/LearnEbyAI/';
+
     return {
+      base: repoBase,
       server: {
         port: 3000,
         host: '0.0.0.0',
